@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+  
+  --color-emerald-deep: #064e3b;
+  --color-champagne: #f7e8d0;
+  --color-champagne-dark: #e5d1b3;
+}
+
+@layer base {
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
+
+.text-luxury {
+  @apply tracking-tight font-serif;
+}
+
+.glass-panel {
+  @apply bg-white/80 backdrop-blur-md border border-white/20;
+}
+
+.hover-lift {
+  @apply transition-transform duration-300 hover:-translate-y-2;
+}
+
+.bg-emerald-luxury {
+  @apply bg-[#064e3b];
+}
+
+.text-champagne {
+  @apply text-[#f7e8d0];
+}
+
+.border-champagne {
+  @apply border-[#f7e8d0];
+}
